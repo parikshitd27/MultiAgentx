@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Full analysis (main.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["${input:ticker}", "--transcript", "${input:transcript}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Single agent (run_agent.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_agent.py",
+      "args": ["${input:agent}", "${input:ticker}", "--transcript", "${input:transcript}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "ticker",
+      "type": "promptString",
+      "description": "Yahoo Finance ticker (e.g. AAPL, MSFT, NESN.SW)",
+      "default": "AAPL"
+    },
+    {
+      "id": "transcript",
+      "type": "promptString",
+      "description": "Transcript path, e.g. transcripts/aapl.txt (leave empty to skip)",
+      "default": ""
+    },
+    {
+      "id": "agent",
+      "type": "pickString",
+      "description": "Which agent to run",
+      "options": ["financial", "news", "risk", "valuation"],
+      "default": "financial"
+    }
+  ]
+}

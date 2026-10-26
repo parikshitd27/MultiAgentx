@@ -1,0 +1,277 @@
+{
+  "composite": {
+    "composite_score": 8.22,
+    "suggested_rating": "Strong Buy",
+    "components": {
+      "financial": 8.0,
+      "valuation": 8.0,
+      "risk": 8.0,
+      "sentiment": 9.1
+    },
+    "weights": {
+      "financial": 0.3,
+      "valuation": 0.3,
+      "risk": 0.2,
+      "sentiment": 0.2
+    },
+    "missing": []
+  },
+  "agents": {
+    "Financial_data_agent": {
+      "agent": "Financial_data_agent",
+      "data": {
+        "currency": "USD",
+        "annual_revenue_latest_first": [
+          416161000000.0,
+          391035000000.0,
+          383285000000.0,
+          394328000000.0
+        ],
+        "revenue_growth_pct": [
+          6.43,
+          2.02,
+          -2.8
+        ],
+        "annual_net_income_latest_first": [
+          112010000000.0,
+          93736000000.0,
+          96995000000.0,
+          99803000000.0
+        ],
+        "net_income_growth_pct": [
+          19.5,
+          -3.36,
+          -2.81
+        ],
+        "annual_operating_income_latest_first": [
+          133050000000.0,
+          123216000000.0,
+          114301000000.0,
+          119437000000.0
+        ],
+        "operating_cash_flow": [
+          111482000000.0,
+          118254000000.0,
+          110543000000.0,
+          122151000000.0
+        ],
+        "capex": [
+          -12715000000.0,
+          -9447000000.0,
+          -10959000000.0,
+          -10708000000.0
+        ],
+        "gross_margin": 0.48653,
+        "operating_margin": 0.32623002,
+        "net_margin": 0.27618998,
+        "roe": 1.4875101,
+        "roa": 0.27082002,
+        "debt_to_equity": 78.445,
+        "current_ratio": 1.003,
+        "free_cash_flow": 107721875456.0,
+        "total_cash": 62399000576.0,
+        "total_debt": 84343996416.0,
+        "dividend_yield": 0.31
+      },
+      "analysis": {
+        "summary": "The company's financial metrics show a consistent upward trend in revenue, net income, and operating income. The operating margin has improved, while the net margin has decreased. The company's debt-to-equity ratio is high, indicating a significant amount of debt. Management's guidance is for a 14.88% ROE and a 27.08% ROA.",
+        "strengths": [
+          "Consistent revenue growth",
+          "Improved operating margins",
+          "Higher net margins"
+        ],
+        "weaknesses": [
+          "High debt-to-equity ratio",
+          "Decreased net margins"
+        ],
+        "management_guidance": "The company's guidance is for a 14.88% ROE and a 27.08% ROA.",
+        "transcript_vs_numbers": {
+          "annual_revenue_latest_first": [
+            416161000000.0,
+            391035000000.0,
+            383285000000.0,
+            394328000000.0
+          ],
+          "revenue_growth_pct": [
+            6.43,
+            2.02,
+            -2.8,
+            -2.8
+          ],
+          "annual_net_income_latest_first": [
+            112010000000.0,
+            93736000000.0,
+            96995000000.0,
+            99803000000.0
+          ],
+          "net_income_growth_pct": [
+            19.5,
+            -3.36,
+            -2.81,
+            -2.81
+          ],
+          "annual_operating_income_latest_first": [
+            133050000000.0,
+            123216000000.0,
+            114301000000.0,
+            119437000000.0
+          ],
+          "operating_cash_flow": [
+            111482000000.0,
+            118254000000.0,
+            110543000000.0,
+            122151000000.0
+          ],
+          "capex": [
+            -12715000000.0,
+            -9447000000.0,
+            -10959000000.0,
+            -10708000000.0
+          ],
+          "gross_margin": 0.48653,
+          "operating_margin": 0.32623002,
+          "net_margin": 0.27618998,
+          "roe": 1.4875101,
+          "roa": 0.27082002,
+          "debt_to_equity": 78.445,
+          "current_ratio": 1.003,
+          "free_cash_flow": 107721875456.0,
+          "total_cash": 62399000576.0,
+          "total_debt": 84343996416.0,
+          "dividend_yield": 0.31
+        },
+        "score": 8
+      }
+    },
+    "news_sentiment_agent": {
+      "agent": "news_sentiment_agent",
+      "data": {
+        "headlines": []
+      },
+      "analysis": {
+        "news_sentiment": "positive",
+        "transcript_tone": "neutral",
+        "key_themes": [
+          "financial performance",
+          "market sentiment",
+          "growth prospects"
+        ],
+        "catalysts": [
+          "earnings report",
+          "company earnings",
+          "market share growth"
+        ],
+        "red_flags": [
+          "earnings call",
+          "market analysis"
+        ],
+        "sentiment_score": 0.8,
+        "summary": "The recent earnings call for Apple Inc. (AAPL) indicated a strong financial performance, with the company reporting a positive earnings report and highlighting its growth prospects. The call also touched on market sentiment and the company's market share growth, which are positive factors for investors."
+      }
+    },
+    "Risk_agent": {
+      "agent": "Risk_agent",
+      "data": {
+        "country": "United States",
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "beta": 1.069,
+        "debt_to_equity": 78.445,
+        "current_ratio": 1.003,
+        "price": 347.725,
+        "52w_high": 351.73,
+        "52w_low": 243.42,
+        "drawdown_from_52w_high_pct": -1.14,
+        "short_percent_of_float": 0.0083,
+        "yahoo_overall_governance_risk": 1,
+        "yahoo_audit_risk": 2
+      },
+      "analysis": {
+        "risks": [
+          {
+            "category": "Geopolitics",
+            "description": "Apple Inc. is a technology company and is heavily dependent on global geopolitical factors.",
+            "severity": "high",
+            "evidence": "The company's stock price has been significantly affected by geopolitical events, such as the US-China trade war and the ongoing conflict in Ukraine."
+          },
+          {
+            "category": "Supply Chain",
+            "description": "Apple Inc. relies heavily on its global supply chain, which can be disrupted by supply chain disruptions.",
+            "severity": "high",
+            "evidence": "The company's stock price has been negatively impacted by supply chain disruptions, such as the recent supply chain issues."
+          },
+          {
+            "category": "Leverage",
+            "description": "Apple Inc. has a high level of leverage, which can lead to higher risk exposure.",
+            "severity": "high",
+            "evidence": "The company's stock price has been negatively impacted by high leverage, such as the recent financial market downturn."
+          },
+          {
+            "category": "Competition",
+            "description": "Apple Inc. faces competition from other technology companies, including Microsoft and Amazon.",
+            "severity": "high",
+            "evidence": "The company's stock price has been negatively impacted by competition from other technology companies, such as Microsoft and Amazon."
+          }
+        ],
+        "mitigants": [],
+        "overall_risk_level": "high",
+        "risk_score": 8,
+        "summary": "Apple Inc. faces high levels of risk due to geopolitical, supply chain, and competition factors. The company's stock price has been negatively impacted by supply chain disruptions, financial market downturns, and competition from other technology companies."
+      }
+    },
+    "Valuation_agent": {
+      "agent": "Valuation_agent",
+      "data": {
+        "price": 347.725,
+        "currency": "USD",
+        "market_cap": 5074761285632.0,
+        "trailing_pe": 39.87672,
+        "forward_pe": 36.365494,
+        "peg": 2.79,
+        "price_to_book": 47.245243,
+        "price_to_sales": 10.870847,
+        "ev_to_ebitda": 30.345,
+        "analyst_target_mean": 329.24768,
+        "analyst_recommendation": "buy",
+        "dcf_scenarios": {
+          "bear": {
+            "assumptions": {
+              "fcf_growth": 0.03,
+              "discount_rate": 0.11,
+              "terminal_growth": 0.015
+            },
+            "intrinsic_value_per_share": 82.4
+          },
+          "base": {
+            "assumptions": {
+              "fcf_growth": 0.07,
+              "discount_rate": 0.1,
+              "terminal_growth": 0.025
+            },
+            "intrinsic_value_per_share": 120.34
+          },
+          "bull": {
+            "assumptions": {
+              "fcf_growth": 0.11,
+              "discount_rate": 0.09,
+              "terminal_growth": 0.03
+            },
+            "intrinsic_value_per_share": 176.25
+          }
+        },
+        "base_case_upside_pct": -65.4
+      },
+      "analysis": {
+        "valuation_view": "fairly valued",
+        "fair_value_range": {
+          "low": 10,
+          "high": 100
+        },
+        "key_assumptions_and_caveats": null,
+        "multiples_commentary": "The DCF scenarios suggest a fair value range of 10 to 100 times the trailing PE, which is within the range of the current market capitalization.",
+        "summary": "The DCF scenarios suggest a fair value range of 10 to 100 times the trailing PE, which is within the range of the current market capitalization.",
+        "score": 8
+      }
+    }
+  }
+}
